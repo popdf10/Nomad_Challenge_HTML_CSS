@@ -1,48 +1,95 @@
 body {
   font-family: sans-serif;
+  display: flex;
   margin: 0;
   padding: 0;
   height: 100vh;
+}
+
+.box1 {
+  background-color: #76c4c6;
+  width: 50%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.box {
-  display: flex;
-  width: 500px;
-  height: 500px;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-
-button {
-  width: 250px;
-  height: 80px;
-  margin-bottom: 20px;
-  background-color: #7f8c8d;
-  color: white;
-  font-size: 25px;
-  border-radius: 50px;
-  border: none;
-}
-
-button:hover {
-  background-color: #95a5a6;
-  box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.3),
-    0 -6px 16px -6px rgba(0, 0, 0, 0.025);
-}
-
-img {
-  width: 300px;
-  height: 300px;
-  transition: all 0.5s ease-in-out;
-}
-
-img:hover {
-  transform: rotate(135deg);
+.circle-container {
   width: 200px;
   height: 200px;
-  border: 3px solid black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  animation: infinite_rotate 1s infinite;
+}
+
+@keyframes infinite_rotate {
+  0% {
+    transfrom: none;
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.box2 {
+  background-color: #1eac9c;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bar {
+  margin-left: 10px;
+  background-color: white;
+  width: 10px;
+  height: 50px;
+}
+
+.bar:nth-child(1) {
+  animation: scale_big_and_small 1.5s ease-in-out infinite 0.2s;
+}
+
+.bar:nth-child(2) {
+  animation: scale_big_and_small 1.5s ease-in-out infinite 0.35s;
+}
+
+.bar:nth-child(3) {
+  animation: scale_big_and_small 1.5s ease-in-out infinite 0.5s;
+}
+
+.bar:nth-child(4) {
+  animation: scale_big_and_small 1.5s ease-in-out infinite 0.65s;
+}
+
+.bar:nth-child(5) {
+  animation: scale_big_and_small 1.5s ease-in-out infinite 0.8s;
+}
+
+@keyframes scale_big_and_small {
+  0% {
+    transform: scaleY(1);
+  }
+  15% {
+    transform: scaleY(2);
+  }
+  30% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(1);
+  }
 }
