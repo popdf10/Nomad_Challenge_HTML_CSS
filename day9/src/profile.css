@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400;700&display=swap");
+
+body {
+  font-family: "Baloo Chettan 2", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.return {
+  color: white;
+  background-color: #339af0;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.container {
+  width: 1000px;
+  height: 1000px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.background-img,
+#bg {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 100vh;
+  height: 30vh;
+}
+
+.around-profile {
+  margin-top: -75px;
+  margin-bottom: 30px;
+  background-color: white;
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#seulgi-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 70px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.description__name {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.description__job {
+  font-size: 30px;
+  opacity: 0.6;
+  margin-bottom: 30px;
+}
+
+.description__button {
+  width: 450px;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#follow,
+#message {
+  width: 150px;
+  height: 50px;
+  font-size: 17px;
+  border-radius: 5px;
+  border: none;
+}
+
+#follow {
+  background-color: #6a75ff;
+  color: white;
+}
+
+#message {
+  background-color: #eaecff;
+  color: #6a75ff;
+}
