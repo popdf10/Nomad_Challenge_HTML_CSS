@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400;500;600&display=swap");
+
+body {
+  font-family: "Baloo Chettan 2", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.contatiner {
+  background-color: #f8f7ff;
+  width: 350px;
+  height: 650px;
+  padding: 40px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  color: #e73e4fbc;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#title {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+
+input {
+  width: 93%;
+  padding: 10px;
+  font-weight: 600;
+  border-radius: 5px;
+  border: none;
+}
+
+::placeholder {
+  opacity: 0.5;
+}
+
+#email {
+  margin-bottom: 20px;
+}
+
+#password {
+  margin-bottom: 15px;
+}
+
+.right-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.left-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.remember-me {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+#checkbox {
+  width: 13px;
+}
+
+#remember-me__text {
+  opacity: 0.5;
+}
+
+.signin {
+  background-color: #e2283f;
+  width: 100%;
+  padding: 15px;
+  color: white;
+  border-radius: 20px;
+  border: none;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.or {
+  margin: 30px 0px;
+  font-weight: 600;
+}
+
+.sns {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.snsButton {
+  padding: 15px;
+  border-radius: 20px;
+  color: white;
+  border: none;
+  width: 160px;
+  margin-bottom: 40px;
+}
+
+#facebook {
+  background-color: #475a95;
+}
+
+#twitter {
+  background-color: #5da1f2;
+}
+
+#last-container {
+  margin-top: 10px;
+}
