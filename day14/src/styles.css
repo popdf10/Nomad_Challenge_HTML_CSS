@@ -81,20 +81,35 @@ img {
   padding: 3px 10px;
 }
 
-.box2-cover {
-  background-color: #28394a;
-  height: 70px;
-  width: 280px;
+.bubble {
   position: relative;
-  bottom: -65px;
-
-  display: flex;
-  justify-content: space-between;
-  transition: transform 0.3s ease 0s;
 }
 
-.box2-cover:hover {
-  transform: translateY(-70px);
+.box2-cover {
+  background-color: #28394a;
+  position: absolute;
+  height: 70px;
+  width: 280px;
+  bottom: 0;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: transform 0.3s, opacity 0.1s 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bubble img {
+  transition: transform 0.3s;
+}
+
+.bubble:hover .box2-cover {
+  opacity: 1;
+  transform: translateY(0);
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.bubble:hover img {
+  transform: translateY(-30px);
 }
 
 .flex-left {
