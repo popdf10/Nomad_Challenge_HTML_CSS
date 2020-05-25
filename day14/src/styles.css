@@ -1,0 +1,150 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 150vh;
+}
+
+.animation-container {
+  background-color: #f8f8f8;
+  width: 500px;
+  height: 300px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  width: 280px;
+  height: 200px;
+  background-color: #009e91;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.box2 {
+  background-color: #f7a3a1;
+}
+
+.box3 {
+  background-color: #d6f0f9;
+}
+
+img {
+  width: 80px;
+  height: 80px;
+}
+
+.box1-cover {
+  width: 280px;
+  height: 200px;
+  background-color: #28394a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease 0s, transform 0.3s ease 0s;
+}
+
+.box1-cover:hover {
+  opacity: 1;
+  transform: translate(15px, 15px);
+}
+
+.box1-cover__1 {
+  color: white;
+}
+
+.box1-cover__2 {
+  color: rgb(211, 73, 73);
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.box1-cover__3 {
+  background-color: rgb(196, 88, 88);
+  font-size: 12px;
+  color: white;
+  font-weight: 600;
+  padding: 3px 10px;
+}
+
+.box2-cover {
+  background-color: #28394a;
+  height: 70px;
+  width: 280px;
+  position: relative;
+  bottom: -65px;
+
+  display: flex;
+  justify-content: space-between;
+  transition: transform 0.3s ease 0s;
+}
+
+.box2-cover:hover {
+  transform: translateY(-70px);
+}
+
+.flex-left {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.flex-left .flex-left__title {
+  color: white;
+}
+
+.flex-left .flex-left__by {
+  color: rgb(211, 73, 73);
+  font-size: 13px;
+}
+
+.flex-right {
+  display: flex;
+  align-items: flex-end;
+  margin-right: 15px;
+}
+
+.takeALook {
+  background-color: rgb(196, 88, 88);
+  font-size: 12px;
+  color: white;
+  font-weight: 600;
+  padding: 3px 10px;
+  margin-bottom: 15px;
+}
+
+.box3-cover {
+  width: 280px;
+  height: 200px;
+  background-color: #28394a;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.box3-cover .flex-left {
+  margin-bottom: 15px;
+}
+
+.box3 {
+  transition: transform 0.3s ease 0s;
+}
+
+.box3:hover {
+  transform: scale(0.5) translateY(-50px);
+}
